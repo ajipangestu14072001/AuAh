@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/grey"
+                android:fontFamily="@font/maia"
+                android:text="Info dan Promo Spesial"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="22sp"
+            android:text="Lihat Semua"
+            android:fontFamily="@font/maia"
+            android:textColor="#00C853"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <www.pcnutrenggalek.auah.decoration.BannerSlider
+        android:id="@+id/sliderView"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:clipToPadding="false"
+        android:focusableInTouchMode="true"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/pagesContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="26dp"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
+
+</LinearLayout>

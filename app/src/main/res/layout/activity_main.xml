@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/color1"
+    android:layout_height="match_parent"
+    tools:context=".activitys.MainActivity">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.cashit.HeaderAnimation
+            android:id="@+id/waveHeader"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleY="4"
+            app:animCloseColor="@color/color3"
+            app:animColorAlpha="0.25"
+            app:animGradientAngle="90"
+            app:animIsRunning="true"
+            app:animProgress="1"
+            app:animStartColor="@color/color3"
+            app:animVelocity="10"
+            app:animWaveHeight="10dp"
+            app:animWaves="MultiWave"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ovotxt"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="@font/maia"
+                    android:text="OVO"
+                    android:textColor="@color/white"
+                    android:textSize="70sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toRightOf="@id/ovotxt"
+                    android:background="@drawable/border_btn"
+                    android:drawableLeft="@drawable/ic_baseline_sentiment_satisfied_alt_24"
+                    android:text="Promo"
+                    android:fontFamily="@font/maia"
+                    android:textSize="20sp"
+                    android:textColor="@color/color3"
+                    app:backgroundTint="@null" />
+
+        </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="10dp"
+                            android:text="OVO Cash"
+                            android:fontFamily="@font/maia"
+                            android:textSize="20sp"
+                            android:textColor="@color/white" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="5dp"
+                            android:text="RP. 20.000"
+                            android:fontFamily="@font/maia"
+                            android:textColor="@color/white"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+                </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rc1"
+            android:layout_marginTop="165dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/car1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="11dp"
+                    android:background="#fff"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                        <RelativeLayout
+                                            android:id="@+id/r1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="70dp"
+                                            android:layout_weight="0.50"
+                                            android:background="?attr/selectableItemBackground"
+                                            android:gravity="center">
+
+                                                <ImageView
+                                                    android:id="@+id/panduan"
+                                                    android:layout_width="40dp"
+                                                    android:layout_height="40dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:src="@drawable/ic_outline_local_fire_department_24"
+                                                    app:tint="@color/color3" />
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_below="@id/panduan"
+                                                    android:fontFamily="@font/maia"
+                                                    android:gravity="center"
+                                                    android:text="Top Up"
+                                                    android:textSize="18sp" />
+
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:id="@+id/r2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="70dp"
+                                            android:layout_weight="0.50"
+                                            android:background="?attr/selectableItemBackground"
+                                            android:gravity="center">
+
+                                                <ImageView
+                                                    android:id="@+id/berita"
+                                                    android:layout_width="40dp"
+                                                    android:layout_height="40dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    app:tint="@color/color3"
+                                                    android:src="@drawable/ic_outline_local_fire_department_24" />
+
+                                                <TextView
+
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_below="@id/berita"
+                                                    android:gravity="center"
+                                                    android:text="Transfer"
+                                                    android:fontFamily="@font/maia"
+                                                    android:textSize="18sp" />
+
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:id="@+id/r3"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="70dp"
+                                            android:layout_weight="0.50"
+                                            android:background="?attr/selectableItemBackground"
+                                            android:gravity="center">
+
+                                                <ImageView
+                                                    android:id="@+id/keluar"
+                                                    android:layout_width="40dp"
+                                                    android:layout_height="40dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    app:tint="@color/color3"
+                                                    android:src="@drawable/ic_outline_local_fire_department_24" />
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_below="@id/keluar"
+                                                    android:gravity="center"
+                                                    android:text="History"
+                                                    android:fontFamily="@font/maia"
+                                                    android:textSize="18sp"
+                                                    app:tint="@color/color3" />
+
+                                        </RelativeLayout>
+
+                                </LinearLayout>
+
+                        </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rc2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rc1">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/car2"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="11dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginEnd="11dp"
+                            android:layout_marginBottom="11dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    app:cardBackgroundColor="@android:color/transparent">
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:layout_weight="0.53"
+                                            android:gravity="center">
+
+                                                <ImageView
+                                                    android:id="@+id/imgc2"
+                                                    android:layout_width="40dp"
+                                                    android:layout_height="40dp"
+                                                    app:tint="@color/color3"
+                                                    android:src="@drawable/ic_outline_local_fire_department_24" />
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:layout_weight="0.25"
+                                            android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/txt1"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/maia"
+                                                    android:text="Upgrade ke OVO Premier"
+                                                    android:textSize="23sp" />
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_below="@+id/txt1"
+                                                    android:fontFamily="@font/maia"
+                                                    android:textSize="17sp"
+                                                    android:text="Daoatkan lebih banyak keuntungan!" />
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:layout_weight="0.55"
+                                            android:gravity="center">
+
+                                                <ImageView
+                                                    android:layout_width="30dp"
+                                                    android:layout_height="30dp"
+                                                    app:tint="@color/color3"
+                                                    android:src="@drawable/ic_outline_local_fire_department_24" />
+                                        </RelativeLayout>
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/r5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rc2"
+                    android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.30">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:id="@+id/img5"
+                                            android:layout_width="55dp"
+                                            android:layout_height="55dp"
+                                            android:layout_centerInParent="true"
+                                            android:src="@drawable/ic_baseline_sentiment_satisfied_alt_24"
+                                            app:civ_border_color="@color/colorPrimary"
+                                            app:civ_border_width="0dp" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/img5"
+                                            android:layout_marginTop="20dp"
+                                            android:gravity="center"
+                                            android:fontFamily="@font/maia"
+                                            android:text="Top Up"
+                                            android:textSize="18sp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.30">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:id="@+id/img6"
+                                            android:layout_width="55dp"
+                                            android:layout_height="55dp"
+                                            android:layout_centerInParent="true"
+                                            android:src="@drawable/ic_baseline_sentiment_satisfied_alt_24"
+                                            app:civ_border_color="@color/colorPrimary"
+                                            app:civ_border_width="0dp" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/img6"
+                                            android:layout_marginTop="20dp"
+                                            android:gravity="center"
+                                            android:fontFamily="@font/maia"
+                                            android:text="Top Up"
+                                            android:textSize="18sp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.30">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:id="@+id/img7"
+                                            android:layout_width="55dp"
+                                            android:layout_height="55dp"
+                                            android:layout_centerInParent="true"
+                                            android:src="@drawable/ic_baseline_sentiment_satisfied_alt_24"
+                                            app:civ_border_color="@color/colorPrimary"
+                                            app:civ_border_width="0dp" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/img7"
+                                            android:layout_marginTop="20dp"
+                                            android:gravity="center"
+                                            android:fontFamily="@font/maia"
+                                            android:text="Top Up"
+                                            android:textSize="18sp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.30">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:id="@+id/img8"
+                                            android:layout_width="55dp"
+                                            android:layout_height="55dp"
+                                            android:layout_centerInParent="true"
+                                            android:src="@drawable/ic_baseline_sentiment_satisfied_alt_24"
+                                            app:civ_border_color="@color/colorPrimary"
+                                            app:civ_border_width="0dp" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/img8"
+                                            android:layout_marginTop="20dp"
+                                            android:gravity="center"
+                                            android:fontFamily="@font/maia"
+                                            android:text="Top Up"
+                                            android:textSize="18sp" />
+                                </RelativeLayout>
+
+                        </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/r4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/r5"
+                    android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.30">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:id="@+id/img1"
+                                            android:layout_width="55dp"
+                                            android:layout_height="55dp"
+                                            android:layout_centerInParent="true"
+                                            android:src="@drawable/ic_baseline_sentiment_satisfied_alt_24"
+                                            app:civ_border_color="@color/colorPrimary"
+                                            app:civ_border_width="0dp" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/img1"
+                                            android:layout_marginTop="20dp"
+                                            android:gravity="center"
+                                            android:fontFamily="@font/maia"
+                                            android:text="Top Up"
+                                            android:textSize="18sp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.30">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:id="@+id/img2"
+                                            android:layout_width="55dp"
+                                            android:layout_height="55dp"
+                                            android:layout_centerInParent="true"
+                                            android:src="@drawable/ic_baseline_sentiment_satisfied_alt_24"
+                                            app:civ_border_color="@color/colorPrimary"
+                                            app:civ_border_width="0dp" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/img2"
+                                            android:layout_marginTop="20dp"
+                                            android:gravity="center"
+                                            android:fontFamily="@font/maia"
+                                            android:text="Top Up"
+                                            android:textSize="18sp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.30">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:id="@+id/img3"
+                                            android:layout_width="55dp"
+                                            android:layout_height="55dp"
+                                            android:layout_centerInParent="true"
+                                            android:src="@drawable/ic_baseline_sentiment_satisfied_alt_24"
+                                            app:civ_border_color="@color/colorPrimary"
+                                            app:civ_border_width="0dp" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/img3"
+                                            android:layout_marginTop="20dp"
+                                            android:gravity="center"
+                                            android:fontFamily="@font/maia"
+                                            android:text="Top Up"
+                                            android:textSize="18sp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.30">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:id="@+id/img4"
+                                            android:layout_width="55dp"
+                                            android:layout_height="55dp"
+                                            android:layout_centerInParent="true"
+                                            android:src="@drawable/ic_baseline_sentiment_satisfied_alt_24"
+                                            app:civ_border_color="@color/colorPrimary"
+                                            app:civ_border_width="0dp" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/img4"
+                                            android:layout_marginTop="20dp"
+                                            android:gravity="center"
+                                            android:fontFamily="@font/maia"
+                                            android:text="Top Up"
+                                            android:textSize="18sp"/>
+                                </RelativeLayout>
+
+                        </LinearLayout>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:layout_below="@id/r4"
+                    android:id="@+id/hr1"
+                    android:layout_marginTop="20dp"
+                    android:background="#ececec" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/hr1"
+                    android:id="@+id/rban"
+                    android:layout_height="wrap_content">
+
+                        <include
+                            android:id="@+id/llBanner"
+                            layout="@layout/layout_banner" />
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:layout_below="@id/rban"
+                    android:id="@+id/hr2"
+                    android:layout_marginTop="10dp"
+                    android:background="#ececec" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hr2">
+
+
+
+                </RelativeLayout>
+        </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="TextAppearance.MaterialComponents.Caption"
+            android:layout_gravity="bottom"
+            app:fabCradleMargin="10dp"
+            app:fabCradleRoundedCornerRadius="10dp"
+            app:fabCradleVerticalOffset="10dp">
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bottomNavigationView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="16dp"
+                    android:background="@android:color/transparent"
+                    app:itemRippleColor="@null"
+                    app:menu="@menu/bottom_nav_menu" />
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/color3"
+            app:tint="@color/white"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_outline_qr_code_scanner_24"
+            app:layout_anchor="@id/bottomAppBar" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

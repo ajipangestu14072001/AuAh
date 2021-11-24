@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activitys.OneActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.percentlayout.widget.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="@color/color3">
+
+        <LinearLayout
+            android:id="@+id/llSignin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:background="@null"
+            android:orientation="vertical"
+            app:layout_widthPercent="85%">
+
+            <www.pcnutrenggalek.auah.component.VerticalTextView
+                android:id="@+id/tvSigninInvoker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:text="Signin"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:visibility="gone"/>
+
+            <include
+                android:id="@+id/llSigninContent"
+                layout="@layout/layout_signin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSignup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@color/color3"
+            android:orientation="vertical"
+            app:layout_widthPercent="15%">
+
+            <www.pcnutrenggalek.auah.component.VerticalTextView
+                android:id="@+id/tvSignupInvoker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:rotation="180"
+                android:paddingTop="15dp"
+                android:text="Signup"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/llSignupContent"
+                layout="@layout/layout_signup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"/>
+        </LinearLayout>
+    </androidx.percentlayout.widget.PercentRelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
